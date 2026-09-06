@@ -52,7 +52,7 @@ async function getWeather(city){
         alert("Enter a valid City");
         return;
     }
-    const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+    const response=await fetch(url);
     if(response.status==404){
         alert("Enter valid City");
     }
